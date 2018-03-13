@@ -1,0 +1,41 @@
+{
+  "name": "ott-sample",
+  "version": "1.0.0",
+  "description": "starter package for ott",
+  "main": "index.js",
+  "repository": "",
+  "scripts": {
+    "start": "webpack-dev-server --open --config ./webpack/webpack.config.dev.js",
+    "start:qa": "webpack-dev-server --open --config ./webpack/webpack.config.qa.js",
+    "build": "webpack -p --config ./webpack/webpack.config.prod.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.1.18",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
+    "create-react-class": "^15.6.3",
+    "lodash": "^3.10.1",
+    "material-ui": "^1.0.0-beta.36",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "nuka-carousel": "^3.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-facebook-login": "^4.0.1",
+    "react-google-login": "^3.0.4",
+    "react-jw-player": "^1.18.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^2.0.1",
+    "react-router-dom": "^4.0.0",
+    "react-slick": "^0.20.0",
+    "redux": "^3.0.4"
+  }
+}
