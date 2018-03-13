@@ -1,14 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from "react-dom";
-import ReactJWPlayer from 'react-jw-player';
-import FacebookLogin from 'react-facebook-login';
-import GoogleLogin from 'react-google-login';
-import TextField from 'material-ui/TextField';
 import Slider from 'react-slick';
-import PrevButton from './prevButton';
-import NextButton from './nextButton';
-import Nuka from 'nuka-carousel';
-import createClass from 'create-react-class';
 import './../../style/style.css';
 
 class App extends Component {
@@ -38,45 +30,6 @@ class App extends Component {
       });
     }
     this.slider.slickPrev()
-  }
-
-
-  fetchNewSliders(start_count,end_count){
-    // this.setState({
-    //   start_count:start_count,
-    //    end_count:end_count
-    // });
-  console.log("fetchNewSliders: start_count>>> "+start_count+" / end_count: "+end_count);
-  }
-
-  onClickedNext() {
-    this.state.start_count = this.state.start_count+10;
-    this.state.end_count = this.state.end_count+10;
-    // this.setState({
-    //   start_count:this.state.start_count+10,
-    //   end_count:this.state.end_count+10
-    // });
-    this.fetchNewSliders(this.state.start_count,this.state.end_count)
-  }
-
-  onClickedPrev() {
-    if(this.state.start_count>0 && this.state.start_count>10){
-      this.state.start_count = this.state.start_count-10;
-      this.state.end_count = this.state.end_count-10;
-      // this.setState({
-      //   start_count:this.state.start_count-10,
-      //   end_count:this.state.end_count-10
-      // });
-    }
-    this.fetchNewSliders(this.state.start_count,this.state.end_count)
-  }
-
-  renderSlides() {
-    return (
-      <div>
-        <img src="http://placekitten.com/g/400/200"/>
-      </div>
-    );
   }
 
   render() {
